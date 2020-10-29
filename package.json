@@ -16,7 +16,8 @@
     "start": "yarn workspace react-aad-msal start",
     "lint": "yarn workspace react-aad-msal lint",
     "test": "yarn workspace react-aad-msal test",
-    "build": "yarn workspace react-aad-msal build"
+    "build": "yarn workspace react-aad-msal build",
+    "postinstall": "cd ./node_modules/react-aad-msal && npm install && npm run build"
   },
   "dependencies": {},
   "husky": {
